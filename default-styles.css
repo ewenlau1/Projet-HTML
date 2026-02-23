@@ -1,5 +1,5 @@
 
-.google-sans-normal> {
+* {
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -17,3 +17,78 @@ footer {
     left: 0;
     right: 0;
 }
+
+#logo {
+  width: auto;
+  height: 120px;
+  margin-left: 0.25%;
+  margin-top: 0.25%;
+  margin-bottom: 0.25%;
+}
+
+header {
+  background-color: rgb(203, 223, 230);
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#arrow-down {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: relative
+}
+
+body {
+  margin: 0;
+  padding-top: 8%;
+  padding-left: 1%;
+  background-color: rgb(242, 252, 255);
+}
+.sidebyside{
+        display: flex;
+        align-items: center;
+        }
+
+
+.sidebyside img{
+           
+        max-width: 150px;
+        margin-right: 10px;
+        max-height: 150px;
+} 
+.image-with-price{
+  text-align: justify;
+  width: 50px;
+}
+.image-with-price img{
+  display: block;
+  margin: 0 auto;
+}
+  
+.button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 256px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+       
