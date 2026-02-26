@@ -1,0 +1,40 @@
+#text-se-connecter {
+    margin-top: 5%;
+    font-size: 128px;
+    text-align: center;
+    display: block;
+}
+
+#inputs-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.text-inputs {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 32px;
+}
+
+#register-button {
+  margin-top: 32px;
+  border-radius: 1024px;
+  cursor: pointer;
+  border: none;
+  background-color: #04AA6D;
+  font-size: 64px;
+  margin-right: 280px;
+  margin-left: 280px;
+}
+
+.inputs {
+    font-size: 32px;
+}
+
+#switch-to-connect {
+    margin-top: 25px;
+    text-align: center;
+}

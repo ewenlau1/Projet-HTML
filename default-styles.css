@@ -29,10 +29,11 @@ footer {
 header {
   background-color: rgb(203, 223, 230);
   color: black;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 #arrow-down {
@@ -49,10 +50,12 @@ header {
 
 body {
   margin: 0;
-  padding-top: 8%;
+  background-color: rgb(242, 252, 255);
+}
+
+main {
   padding-left: 1%;
   padding-right: 1%;
-  background-color: rgb(242, 252, 255);
 }
   
 #more-button {
@@ -97,3 +100,27 @@ body {
   font-size: 32px;
 }
 
+#inputs-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.text-inputs {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 32px;
+}
+
+#register-button {
+  margin-top: 32px;
+  border-radius: 1024px;
+  cursor: pointer;
+  border: none;
+  background-color: #04AA6D;
+  font-size: 64px;
+  margin-right: 200px;
+  margin-left: 200px;
+}

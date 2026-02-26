@@ -33,12 +33,14 @@
         <span id="text-se-connecter">Inscription</span>
         <div id=inputs-div>
         <span class="text-inputs">Adresse mail:</span><br>
-        <input class="inputs" type="email" placeholder="Entrez votre adresse mail ici"></input><br>
+        <input class="inputs" type="email" id="email-input" placeholder="Entrez votre adresse mail ici"></input><br>
         <span class="text-inputs">Nom d'utilisateur:</span><br>
-        <input class="inputs" type="name" placeholder="Entrez votre nom d'utilisateur ici"></input><br>
+        <input class="inputs" type="name" placeholder="Entrez votre nom d'utilisateur ici" id="username-input"></input><br>
         <span class="text-inputs">Mot de pase:</span><br>
-        <input class="inputs" type="password" placeholder="Entrez votre mot de passe ici"></input><br>
-        <button id="register-button">S'inscrire</button><br>
+        <input class="inputs" type="password" placeholder="Entrez votre mot de passe ici" id="password-input"></input><br>
+        <span class="text-inputs">Confirmation du mot de passe:</span><br>
+        <input class="inputs" type="password" placeholder="Reentrez votre mot de passe ici" id="password-input-2"></input><br>
+        <button id="register-button" onClick="registerButtonClick()">S'inscrire</button><br>
         <a id=switch-to-connect href="/connexion">Vous avez déjà un compte?</a>
 
         </div>
