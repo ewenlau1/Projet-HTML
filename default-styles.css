@@ -21,9 +21,9 @@ footer {
 #logo {
   width: auto;
   height: 120px;
-  margin-left: 0.25%;
-  margin-top: 0.25%;
-  margin-bottom: 0.25%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 header {
@@ -74,21 +74,45 @@ body {
   margin: 0 auto;
 }
   
-.button {
+#more-button {
   background-color: #04AA6D;
   color: white;
-  padding: 10px 25px;
+  padding: 5px 25px;
   text-decoration: none;
   font-size: 16px;
-  border-radius: 256px;
+  border-radius: 1024px;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 5px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
        
+#login-icon {
+  width: auto;
+  height: 120px;
+
+}
+
+#login-button {
+  position: absolute;
+  right: 1%;
+  border: none;
+  background-color: transparent;
+  border-radius: 1024px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+#login-text {
+  font-size: 32px;
+
+}
