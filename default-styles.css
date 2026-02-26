@@ -20,10 +20,10 @@ footer {
 
 #logo {
   width: auto;
-  height: 5%;
-  margin-left: 1%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  height: 160px;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 header {
@@ -51,6 +51,7 @@ body {
   margin: 0;
   padding-top: 8%;
   padding-left: 1%;
+  padding-right: 1%;
   background-color: rgb(242, 252, 255);
 }
   
@@ -95,3 +96,4 @@ body {
 #login-text {
   font-size: 32px;
 }
+

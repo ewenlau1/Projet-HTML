@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/default-styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
@@ -23,13 +24,28 @@
             <button id=login-button onClick="loginButtonClicked()">
             <img id=login-icon src="/img/user-icon-profile-icon-account-icon-login-sign-line-vector.png"></img>
             <span id=login-text>Se connecter / S'inscrire</span>
+
             </button>
             
             </div>
         </header>
         <!--Contenu de la page ici-->
-        <h1>Insérer page ici</h1>
-        <script src="default.js" async defer></script>
+        <span id="text-se-connecter">Inscription</span>
+        <div id=inputs-div>
+        <span class="text-inputs">Adresse mail:</span><br>
+        <input class="inputs" type="email" placeholder="Entrez votre adresse mail ici"></input><br>
+        <span class="text-inputs">Nom d'utilisateur:</span><br>
+        <input class="inputs" type="name" placeholder="Entrez votre nom d'utilisateur ici"></input><br>
+        <span class="text-inputs">Mot de pase:</span><br>
+        <input class="inputs" type="password" placeholder="Entrez votre mot de passe ici"></input><br>
+        <button id="register-button">S'inscrire</button><br>
+        <a id=switch-to-connect href="/connexion">Vous avez déjà un compte?</a>
+
+        </div>
+
+
+
+        <script src="script.js" async defer></script>
 
         <!--En bas (doit rester pareil sur toute les pages)-->
         <footer>
