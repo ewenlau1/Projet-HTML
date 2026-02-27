@@ -1,6 +1,6 @@
 #text-se-connecter {
     margin-top: 5%;
-    font-size: 128px;
+    font-size: clamp(64px, 8vw, 128px);
     text-align: center;
     display: block;
 }
@@ -8,15 +8,15 @@
 #inputs-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .text-inputs {
   margin-bottom: 5px;
   margin-top: 5px;
-  font-size: 32px;
+  font-size: clamp(20px, 4vw, 32px);
 }
 
 #register-button {
@@ -25,16 +25,20 @@
   cursor: pointer;
   border: none;
   background-color: #04AA6D;
-  font-size: 64px;
-  margin-right: 300px;
-  margin-left: 300px;
+  font-size: clamp(50px, 6vw, 64px);
+  width: 100%;
+  align-self: center;
 }
 
 .inputs {
-    font-size: 32px;
+    font-size: clamp(20px, 4vw, 32px);
 }
 
 #switch-to-connect {
     margin-top: 25px;
     text-align: center;
+}
+
+.red {
+  color: red;
 }

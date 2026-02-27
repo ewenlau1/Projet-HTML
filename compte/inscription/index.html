@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Default</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/default-styles.css">
+        <link rel="stylesheet" href="../login-styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--En haut (doit rester pareil sur toutes les pages)-->
+        <header>
+            <div class="wrapper">
+            <img id=logo src="/img/logo-temp.png"></img>
+            <button id=more-button onClick="buttonClick()">
+                <span>Plus</span>
+                <img id=arrow-down src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWklEQVR4nO3bPWoDMRCG4WlziWBys+ly6ASzB0mcxoIU+QHbcb6VnhfUCjEPU2yxVZIkSZIkSZIkSZIkSZIkqR7++wETdLMZPlbVS1U93+rCBeuqOlbV0y0wXqvqVFXvUC7GeDvPcLsG5TPGOFAuxzhdg/IVBpTrMS5G+QkEynUYf7IlUO6MMYIShDGCEoQxghKEMYIShDGCEoQxghKEMVodpZMwVkfpRIxVUToZYzWU3gPGKii9J4zZUXqPGLOi9J4xZkPpGTBmQemZMPaO0jNi7BWlZ8bYG0qvgLEXlF4JIx2lV8RIRemVMdJQGkYOSsPIQWkYOSgNIwelYeSgNIwclIaRg9IwclAaRg5Kw8hBaRg5KA0jB6Vh3K/D+T/v74b99gvG8XyH7rgpJ5uRj7LByEHZYOSgbDByUDYYOSgbjByUDUZOB98ZkiRJkiRJkiRJkiRJkiRVfh8rgMS1d/NV+QAAAABJRU5ErkJggg==" alt="expand-arrow--v1">
+            </button>
+            <button id=login-button onClick="loginButtonClicked()">
+            <img id=login-icon src="/img/user-icon-profile-icon-account-icon-login-sign-line-vector.png"></img>
+            <span id=login-text>Se connecter / S'inscrire</span>
+
+            </button>
+            
+            </div>
+        </header>
+        <!--Contenu de la page ici-->
+        <span id="text-se-connecter">Inscription</span>
+        <div id=inputs-div>
+        <span class="text-inputs">Adresse mail:</span><br>
+        <input class="inputs" type="email" id="email-input" placeholder="Entrez votre adresse mail ici"></input><br>
+        <div id="wrong-email"></div>
+        <span class="text-inputs">Nom d'utilisateur:</span><br>
+        <input class="inputs" type="name" placeholder="Entrez votre nom d'utilisateur ici" id="username-input"></input><br>
+        <div id="wrong-username"></div>
+        <span class="text-inputs">Mot de pase:</span><br>
+        <input class="inputs" type="password" placeholder="Entrez votre mot de passe ici" id="password-input"></input><br>
+        <div id="wrong-password"></div>
+        <span class="text-inputs">Confirmation du mot de passe:</span><br>
+        <input class="inputs" type="password" placeholder="Reentrez votre mot de passe ici" id="password-input-2"></input><br>
+        <div id="wrong-confirm"></div>
+        <button id="register-button" onClick="registerButtonClick()">S'inscrire</button><br>
+        <a id=switch-to-connect href="../connexion">Vous avez déjà un compte?</a>
+
+        </div>
+
+
+
+        <script src="script.js" async defer></script>
+
+        <!--En bas (doit rester pareil sur toute les pages)-->
+        <footer>
+            <p>TBD</p>
+        </footer>
+    </body>
+</html>

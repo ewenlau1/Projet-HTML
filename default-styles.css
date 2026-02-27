@@ -20,10 +20,10 @@ footer {
 
 #logo {
   width: auto;
-  height: 160px;
-  margin-left: 0.5%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
+  height: clamp(80px, 16vw, 160px);
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 
 #arrow-down {
   width: auto;
-  height: 100%;
+  height: clamp(24px, 8vw, 100px);
   margin: 0 auto;
 }
 
@@ -79,7 +79,7 @@ main {
        
 #login-icon {
   width: auto;
-  height: 120px;
+  height: clamp(60px, 16vw, 120px);
 
 }
 
@@ -97,30 +97,5 @@ main {
   }
 
 #login-text {
-  font-size: 32px;
-}
-
-#inputs-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.text-inputs {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  font-size: 32px;
-}
-
-#register-button {
-  margin-top: 32px;
-  border-radius: 1024px;
-  cursor: pointer;
-  border: none;
-  background-color: #04AA6D;
-  font-size: 64px;
-  margin-right: 200px;
-  margin-left: 200px;
+  font-size: clamp(10px, 2vw, 32px);
 }

@@ -1,0 +1,15 @@
+.center {
+    text-align: center;
+}
+
+.t128 {
+    font-size: clamp(64px, 8vw, 128px);
+}
+
+.green {
+    color: rgb(50, 122, 50);
+}
+
+.t64 {
+    font-size: clamp(32px, 8vw, 64px);
+}
