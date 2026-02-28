@@ -39,6 +39,7 @@
     text-align: center;
 }
 
-.red {
+.error {
   color: red;
+  font-size: clamp(16px, 3vw, 28px);
 }

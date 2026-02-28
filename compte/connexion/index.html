@@ -33,10 +33,12 @@
         <span id="text-se-connecter">Connexion</span>
         <div id=inputs-div>
         <span class="text-inputs">Adresse mail:</span><br>
-        <input class="inputs" type="email" placeholder="Entrez votre adresse mail ici"></input><br>
+        <input class="inputs" type="email" id="email-input" placeholder="Entrez votre adresse mail ici"></input><br>
+        <div id="wrong-email"></div>
         <span class="text-inputs">Mot de pase:</span><br>
-        <input class="inputs" type="password" placeholder="Entrez votre mot de passe ici"></input><br>
-        <button id="register-button">Se connecter</button><br>
+        <input class="inputs" type="password" id="password-input" placeholder="Entrez votre mot de passe ici"></input><br>
+        <div id="wrong-password"></div>
+        <button id="register-button" onClick="connectButtonClick()">Se connecter</button><br>
         <a id=switch-to-connect href="../inscription">Vous n'avez pas de compte?</a>
 
         </div>
@@ -44,6 +46,8 @@
 
 
         <script src="script.js" async defer></script>
+        <script src="/default-script.js"></script>
+        <script type="text/javascript">onEveryPageLoad();</script>
 
         <!--En bas (doit rester pareil sur toute les pages)-->
         <footer>
