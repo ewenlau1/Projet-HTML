@@ -2,11 +2,11 @@
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 function pageLoad() {
-    if(!JSON.parse(sessionStorage.getItem('userJustCreated'))) {
+    if(!JSON.parse(sessionStorage.getItem('logged-in'))) {
         window.location.replace("/");
     }
 
-    document.getElementById("username-replace").innerHTML = JSON.parse(sessionStorage.getItem('newlyCreatedUsername'));
+    document.getElementById("username-replace").innerHTML = JSON.parse(sessionStorage.getItem('login-username'));
 
     timerExecute();
 }
@@ -18,7 +18,6 @@ async function timerExecute() {
         timerRemaining -= 1;
         document.getElementById("redirect-timer").innerHTML = timerRemaining;
     }
-    sessionStorage.setItem('userJustCreated', false);
-    window.location.replace("../../connexion");
+    window.location.replace("/");
 
 }

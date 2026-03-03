@@ -40,7 +40,8 @@ function connectButtonClick() {
     
 
     //At this point, password and email should be confirmed
-    localStorage.setItem("logged-in", JSON.stringify(true));
-    localStorage.setItem("login-username", JSON.stringify(l_username));
+    sessionStorage.setItem("logged-in", JSON.stringify(true));
+    sessionStorage.setItem("login-username", JSON.stringify(l_username));
+    window.location.href = "succes";
 
 }
